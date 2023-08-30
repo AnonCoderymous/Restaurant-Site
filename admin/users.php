@@ -116,9 +116,9 @@
 		        <td>
 		        	<?php
 		        		if($users[ 'pass' ] === NULL)
-		        			echo '<font style="color:red; font-weight:bold;">NOT REGISTERED</font>';
+		        			echo '<font style="color:red; font-weight:bold;">IN-ACTIVE</font>';
 		        		else
-		        			echo '<font style="color:green; font-weight:bold;">REGISTERED</font>';
+		        			echo '<font style="color:green; font-weight:bold;">ACTIVE</font>';
 		        	?>
 		        </td>
 
