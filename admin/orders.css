@@ -1,0 +1,30 @@
+/* ORDERS PAGE & USERS PAGE DESIGNS */
+section.showOrders, section.showUsers {
+	background: #fff;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th {
+	text-transform: uppercase;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: center;
+	padding:5px;
+	width: fit-content;
+}
+
+#maps img {
+	transition: all ease 0.5s;
+}
+
+#maps img:hover {
+	transition: all ease 0.5s;
+	filter: brightness(2);
+}

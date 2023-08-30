@@ -1,0 +1,285 @@
+/* Font Family */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+/* ADMIN LOGIN PAGE */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'DM Sans', sans-serif;
+}
+
+a {text-decoration: none;}
+
+.activeNav {
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: 1px solid #fff;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+.main {
+	position: relative;
+	height: calc(100%-500%);;
+	width: 100%;
+}
+
+.nav {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1.5vw 2vw;
+}
+
+.left{
+	position: fixed;
+	margin-top: 5vw;
+	text-transform: capitalize;
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	background: #000;
+	padding: 30px;
+	left: 0px;
+}
+
+.left .fa-solid {
+	margin-right: 1vw;
+}
+
+.left a {
+	text-decoration: none;
+	color: #fff;
+	transition: 0.2s ease;
+}
+
+.left .menu:not(.activeNav):hover a {
+	background: #E6E6FA;
+	padding: 10px 12px;
+	margin-left: -10px;
+	border-radius: 20px;
+	transform: 0.2s ease;
+	color: #000;
+}
+
+.menu {
+	margin-bottom: 4vw;
+	z-index: 9;
+}
+
+.nav img {
+	width: 80px;
+	border-radius: 50%;
+}
+
+.middle .txt {
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.parent {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: .5vw;
+}
+
+.notification {
+	display: flex;
+}
+
+.roleArea {
+	margin-right: 1vw;
+}
+
+.adminIcon {
+	margin-left: 1vw;
+}
+
+.right img {
+	width: 50px;
+	border-radius: 50%;
+	border: 1px solid grey;
+}
+
+#redDot {
+	content: "";
+	background: red;
+	height: 5px;
+	width: 5px;
+	border-radius: 50%;
+}
+
+.dropdown i {
+	font-size: 20px;
+}
+
+.dropdown i:hover{
+	cursor: pointer;
+	color: blue;
+	transition: 0.3s ease;
+}
+
+.dropdown_menu {
+	position: fixed;
+	right: 10px;
+	background: #fff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+	z-index: 9;
+	border-radius: 5px;
+	padding: 5px 10px;
+	transition: 0.5s ease;
+	top: 50px;
+	transform: translate(0px, 0px) scale(0);
+}
+
+.dropdown_menu div {
+	margin-top: .5vw;
+}
+
+.dropdown_menu div a{
+	text-transform: capitalize;
+	font-size: 13px;
+	color: #696969;
+}
+
+.dropdown_menu div a:hover {
+	color: #000;
+}
+
+.name {
+	font-size: 13px;
+}
+
+.role {
+	color: #696969;
+	font-size: 12px; 
+}
+
+/* CARD SECTION */
+section.cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	transform: translate(0px, 0px);
+	margin-left: 200px;
+	flex-wrap: wrap;
+}
+
+.cards .txt {
+	text-transform: capitalize;
+	font-size: 20px;
+}
+
+.cards div {
+	width: 250px;
+	height: fit-content;
+	padding: 15px;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 1rem;
+}
+
+.amt {
+	font-size: 30px; 
+}
+
+.revenue {
+	background: linear-gradient(180deg, #DFFF00, #FFEA00);
+}
+
+.earnings {
+	background: linear-gradient(180deg, #1434A4, #0000FF);
+}
+
+.totalorders {
+	background: linear-gradient(180deg, #D70040, #DE3163);	
+}
+
+.productsSold {
+	background: linear-gradient(180deg, #4F7942, #50C878);
+}
+
+.totalUsers {
+	background: linear-gradient(180deg, #36454F, #301934);
+}
+
+.totalVisits {
+	background: linear-gradient(180deg, #BF40BF, #AA336A);
+}
+
+.totalEnquiries {
+	background: linear-gradient(180deg, #9F2B68, #DE3163);
+}
+
+.totalComplaints {
+	background: linear-gradient(180deg, #9F2B68, #DE3163);
+}
+
+/*table {
+  transform: translate(100px, 0px);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #DDD;
+  transition: 0.2s ease;
+  object-fit: cover;
+}
+
+tr.headers {
+	text-transform: uppercase;
+}
+
+tr:not(.headers):hover {
+	transition: 0.2s ease;
+	background-color: #D6EEEE;
+}
+    
+div.pager {
+    text-align: center;
+    margin: 1vw 0;
+}
+    
+div.pager span {
+    display: inline-block;
+    width: 1.8vw;
+    height: 1.8vw;
+    line-height: 1.8;
+    text-align: center;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    margin-right: 0.5vw;
+    border-radius: 5px;
+}
+    
+div.pager span.active {
+    background: #c00;
+    opacity: 0.9;
+}
+
+div.pager span.active:hover {
+	opacity: 1;
+}
+
+.fa-trash {
+	color: red;
+}
+
+td a:hover, .fa-trash:hover {
+	color: hotpink;
+}*/
