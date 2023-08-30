@@ -1,6 +1,5 @@
 # Description
-	This is a restaurant site system. It is a demonstration of how a restaurant site works.
-	You get to see a user-friendly UI at the begining. The user can interact with the UI. Then if user wants to order something, he/she can navigate to 'Menu' Section, and can search and add item to cart and they can order items, the user can also see the past orders in the 'My Order History' page. There is also an authentication system, which allows user to prefill information rather than filling it again. The Admin panel, also has various functionalities, the admin user can see registered users, they can see orders, and can add new food items, or delete or update existing items. It has CRUD Operations.
+This is a restaurant site system. It is a demonstration of how a restaurant site works.	You get to see a user-friendly UI at the begining. The user can interact with the UI. Then if user wants to order something, he/she can navigate to 'Menu' Section, and can search and add item to cart and they can order items, the user can also see the past orders in the 'My Order History' page. There is also an authentication system, which allows user to prefill information rather than filling it again. The Admin panel, also has various functionalities, the admin user can see registered users, they can see orders, and can add new food items, or delete or update existing items. It has CRUD Operations.
 
 # Product Image Generation URL
 	https://www.freepik.com/
